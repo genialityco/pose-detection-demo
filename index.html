@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaPipe Pose Detection</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Pose Detection using MediaPipe</h1>
+  <section id="demos" class="invisible">
+    <h2>Demo: Webcam Continuous Pose Detection</h2>
+    <p>Stand in front of your webcam to get real-time pose detection. Click <b>enable webcam</b> below and grant access.
+    </p>
+    <section>
+      <h2 id="collisionCounter">Colisiones: 0</h2>
+    </section>
+    <div id="liveView" class="videoView">
+      <button id="webcamButton" class="mdc-button mdc-button--raised">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">ENABLE WEBCAM</span>
+      </button>
+      <div style="position: relative;">
+        <video id="webcam" autoplay playsinline style="width: 1280px; height: 720px; position: absolute;"></video>
+        <canvas id="output_canvas" width="1280" height="720" style="position: absolute; left: 0px; top: 0px;"></canvas>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
